@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-passport-authentication",
+  "version": "1.0.0",
+  "description": "example of app with registration, login and access control",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongoose",
+    "passport"
+  ],
+  "author": "Francesco Mirabella",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.20",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirstuk/nodejs-passport-authentication.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mirstuk/nodejs-passport-authentication/issues"
+  },
+  "homepage": "https://github.com/mirstuk/nodejs-passport-authentication#readme"
+}
