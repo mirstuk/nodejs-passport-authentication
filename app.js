@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
+const helmet = require('helmet');
 
 const app = express();
 
@@ -21,6 +22,9 @@ mongoose
   })
   .then(() => console.log('MongoDB connected ...'))
   .catch(err => console.log(err));
+
+// helmet
+app.use(helmet());
 
 app.use('/public', express.static(path.join(__dirname, '/public')));
 
